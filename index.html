@@ -1,207 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Top-rated house painting in Destin, FL. Over 25 years experience, proudly using Sherwin Williams, Behr, and other high-end products.">
-  <title>Durable Coats Painting | Destin, FL</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <!-- Primary SEO tags -->
+  <title>Pressure Wash FL | Pro Exterior Cleaning & Painting in Destin, FL</title>
+  <meta name="description" content="Pressure Wash FL – 20+ years in Destin, Fort Walton Beach & surrounding areas. Pro pressure washing, mold/algae removal, painting. $99 promo!" />
+  <link rel="canonical" href="https://your-github-pages-url/index.html"/>
+
+  <!-- Open Graph for social previews -->
+  <meta property="og:title" content="Pressure Wash FL | Destin’s Premier Cleaning Pros"/>
+  <meta property="og:description" content="20+ years blasting away mold, algae & mildew across Destin and FWB. Pricing from $99!" />
+  <meta property="og:image" content="https://your-github-pages-url/images/hero.jpg"/>
+  <meta property="og:url" content="https://your-github-pages-url/"/>
+  <meta property="og:type" content="website"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Pressure Wash FL – Destin Exterior Cleaning"/>
+  <meta name="twitter:description" content="Expert pressure washing & painting from just $99. Serving Destin & FWB!" />
+  <meta name="twitter:image" content="https://your-github-pages-url/images/hero.jpg"/>
+
+  <!-- Structured Data (LocalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Pressure Wash FL",
+    "image": "https://your-github-pages-url/images/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3755 Scenic Hwy 98",
+      "addressLocality": "Destin",
+      "addressRegion": "FL",
+      "postalCode": "32541"
+    },
+    "telephone": "850-860-5318",
+    "url": "https://your-github-pages-url/",
+    "priceRange": "$99+",
+    "openingHours": "Mo,Tu,We,Th,Fr 08:00-18:00"
+  }
+  </script>
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
   <style>
-    :root {
-      --primary-color: #1e90ff;
-      --secondary-color: #f0f8ff;
-      --accent-color: #ff6347;
-      --text-color: #333;
-      --header-height: 80px;
+    body { margin:0; font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; background:#fff; color:#004C8C; }
+    /* HERO */
+    header.hero {
+      position:relative; height:70vh;
+      background:url('images/hero.jpg') center/cover no-repeat;
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: var(--text-color);
-      background: var(--secondary-color);
-      line-height: 1.6;
+    header.hero::before {
+      content:""; position:absolute; inset:0;
+      background:rgba(135,206,235,0.6);
     }
-    header {
-      background: var(--primary-color);
-      color: white;
-      height: var(--header-height);
-      display: flex;
-      align-items: center;
-      padding: 0 20px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+    .hero-content {
+      position:relative; z-index:1;
+      height:100%; display:flex; flex-direction:column;
+      justify-content:center; align-items:center;
+      text-align:center; padding:0 1rem;
     }
-    .logo {
-      height: 60px;
-      margin-right: 15px;
+    .hero-content h1 {
+      font-size:5rem; margin:0;
+      color:#fff; text-shadow:2px 2px 8px rgba(0,0,0,0.5);
     }
-    header h1 {
-      font-size: 1.8rem;
-      flex-grow: 1;
+    .hero-content .subtitle {
+      margin:0.5rem 0; font-size:2rem; color:#fff;
+      font-weight:500;
     }
-    nav a {
-      color: white;
-      margin-left: 15px;
-      text-decoration: none;
-      font-weight: bold;
+    .hero-content p.call {
+      margin-top:1.5rem;
+      background:#fff; color:#004C8C;
+      padding:1rem 2rem; border-radius:9999px;
+      font-size:1.25rem; font-weight:bold;
+      transition:transform .2s ease;
     }
-    .hero {
-      background: url('images/Header.jpg') center/cover no-repeat;
-      height: 80vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.2rem;
-    }
-    .cta-button {
-      background: var(--accent-color);
-      color: white;
-      padding: 12px 24px;
-      margin-top: 20px;
-      display: inline-block;
-      text-decoration: none;
-      font-size: 1rem;
-      border-radius: 5px;
-      transition: opacity 0.3s;
-    }
-    .cta-button:hover { opacity: 0.9; }
-    .features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      padding: 40px 20px;
-    }
-    .feature {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      flex: 1 1 300px;
-      margin: 15px;
-      padding: 20px;
-      text-align: center;
-      transition: transform 0.3s;
-    }
-    .feature:hover { transform: translateY(-5px); }
-    .feature img, .feature video {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      border-radius: 5px;
-      margin-bottom: 15px;
-    }
-    footer {
-      background: var(--primary-color);
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-    @media (max-width: 768px) {
-      .features { flex-direction: column; align-items: center; }
-      .hero h2 { font-size: 2rem; }
-    }
+    .hero-content p.call:hover { transform:scale(1.1); }
+    /* PROMO BADGE */
+    .promo { position:fixed; top:35%; right:1rem; display:flex; align-items:center; z-index:1000; }
+    .promo-text { background:#fff; color:#004C8C; padding:.75rem 1.25rem; border-radius:.5rem; font-size:1.125rem; font-weight:bold; box-shadow:0 2px 6px rgba(0,0,0,0.2); }
+    .star-badge { width:180px; height:180px; margin-left:.5rem; background:gold; border:5px solid #004C8C; clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%); display:flex; align-items:center; justify-content:center; font-size:1.75rem; font-weight:bold; color:#004C8C; text-shadow:1px 1px 2px rgba(255,255,255,0.8); box-shadow:0 2px 6px rgba(0,0,0,0.2); }
+    /* VIDEO */
+    .video-wrapper { width:100%; max-width:900px; margin:2rem auto; }
+    .video-wrapper video { width:100%; border-radius:.75rem; box-shadow:0 4px 12px rgba(0,0,0,0.15); }
+    /* SECTIONS */
+    .container { max-width:900px; margin:3rem auto; padding:0 1rem; text-align:center; }
+    .section-title { font-size:3rem; color:#004C8C; font-weight:900; text-transform:uppercase; letter-spacing:1px; margin-bottom:1.5rem; }
+    /* IMAGE GRID */
+    .img-grid { display:grid; grid-template-columns:1fr; gap:1.5rem; }
+    @media(min-width:768px){ .img-grid { grid-template-columns:repeat(3,1fr); } }
+    .img-grid img { width:100%; height:16rem; object-fit:cover; border-radius:.75rem; box-shadow:0 4px 12px rgba(0,0,0,0.15); transition:transform .3s ease; }
+    .img-grid img:hover { transform:scale(1.05); }
+    /* MOBILE */
+    @media(max-width:640px){ header.hero { height:50vh; } .hero-content h1 { font-size:clamp(2rem,8vw,4rem); } .hero-content .subtitle { font-size:1.5rem; } .hero-content p.call { font-size:1rem; padding:.5rem 1rem; } .promo { display:none; } .section-title { font-size:2rem; margin-bottom:1rem; } .img-grid img { height:12rem; } }
+    /* FOOTER */
+    footer { background:#87CEEB; color:#fff; text-align:center; padding:1.5rem; margin-top:4rem; font-size:1rem; }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="images/paintinglogo.png" alt="Durable Coats Painting Logo" class="logo">
-    <h1>Durable Coats Painting</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#video">Video</a>
-      <a href="#beforeafter">Before & After</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Pressure Wash FL</h1>
+      <p class="subtitle">Proudly Serving Destin, Fort Walton Beach & Surrounding Areas</p>
+      <p class="call">Call or Text Now! <strong>850-860-5318</strong></p>
+    </div>
   </header>
 
-  <section class="hero">
-    <div>
-      <h2>Over 25 Years of Experience</h2>
-      <p>Proudly using Sherwin Williams, Behr, and other high-end products</p>
-      <a href="#contact" class="cta-button">Get Your Free Quote</a>
-    </div>
-  </section>
+  <!-- PROMO BADGE -->
+  <div class="promo">
+    <div class="promo-text">Prices starting at just</div>
+    <div class="star-badge">$99</div>
+  </div>
 
-  <section id="video" style="padding: 40px 20px; text-align: center;">
-    <h2>Watch Our Work in Action</h2>
-    <video src="PaintVideo.mp4" autoplay muted playsinline style="max-width: 100%; border-radius: 10px;">
-      Your browser does not support HTML5 video.
+  <!-- OPTIONAL VIDEO -->
+  <div class="video-wrapper">
+    <video controls muted preload="metadata" video="images/promo.mp4">
+      <source src="images/promo.mp4" type="video/mp4">
     </video>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="container">
+    <h2 class="section-title">About Us</h2>
+    <p class="text-xl leading-relaxed">
+      We transform Florida homes, decks & businesses with pro-grade pressure washing  
+      and eco-friendly solutions. Guaranteed spotless results every time!
+    </p>
   </section>
 
-  <section id="about" class="features">
-    <div class="feature">
-      <img src="images/image1.jpg" alt="High-End Products">
-      <h3>High-End Products</h3>
-      <p>We use only the best paints: Sherwin Williams, Behr, and other trusted brands for lasting results.</p>
-    </div>
-    <div class="feature">
-      <img src="images/image2.jpg" alt="Experienced Painters">
-      <h3>Our Expertise</h3>
-      <p>Based in Destin, FL, our team delivers quality workmanship and attention to detail on every job.</p>
-    </div>
-    <div class="feature">
-      <img src="images/image3.jpg" alt="House Exterior Painting">
-      <h3>Quality & Durability</h3>
-      <p>Enjoy vibrant, durable finishes that stand up to the Florida coast’s unique climate.</p>
-    </div>
-  </section>
-
-  <section id="services" class="features">
-    <div class="feature">
-      <img src="images/image4.jpg" alt="Interior Painting">
-      <h3>Interior Painting</h3>
-      <p>Transform your living spaces with fresh, flawless interior paint jobs.</p>
-    </div>
-    <div class="feature">
-      <img src="images/image5.jpg" alt="Deck Painting">
-      <h3>Deck & Fence Painting</h3>
-      <p>Restore and protect your outdoor wood surfaces with expert staining and painting.</p>
-    </div>
-    <div class="feature">
-      <img src="images/image6.jpg" alt="Commercial Painting">
-      <h3>Commercial Services</h3>
-      <p>From offices to storefronts, we handle projects of all sizes with professionalism and care.</p>
+  <!-- BEFORE & AFTER -->
+  <section class="container">
+    <h2 class="section-title">Before &amp; After</h2>
+    <div class="img-grid">
+      <img src="images/before.jpg" alt="Before pressure washing in Destin, FL">
+      <img src="images/action.jpg" alt="Pressure washing in action on a deck">
+      <img src="images/after.jpg" alt="After professional pressure washing">
     </div>
   </section>
 
-  <section id="beforeafter" class="features">
-    <h2>Before & After Transformations</h2>
-    <div class="feature">
-      <img src="images/beforeafter1.jpg" alt="Before & After 1">
-      <h3>Project 1</h3>
-    </div>
-    <div class="feature">
-      <img src="images/beforeafter2.jpg" alt="Before & After 2">
-      <h3>Project 2</h3>
-    </div>
-    <div class="feature">
-      <img src="images/beforeafter3.jpg" alt="Before & After 3">
-      <h3>Project 3</h3>
-    </div>
+  <!-- PAINTING -->
+  <section class="container">
+    <h2 class="section-title">We Also Do Painting</h2>
+    <img src="images/painting.jpg" alt="Exterior painting service"
+         class="w-full h-64 object-cover rounded-lg shadow-lg mb-6">
+    <p class="text-xl leading-relaxed">
+      Need a fresh coat? Our expert painters handle interior & exterior jobs  
+      to brighten and protect your property. Quality finishes guaranteed!
+    </p>
   </section>
 
-  <section id="contact" style="padding: 40px 20px; text-align: center;">
-    <h2>Contact Us</h2>
-    <p>Ready to transform your home? We’re just a click away.</p>
-    <p><strong>Phone:</strong> (850) 860-5318</p>
-    <p><strong>Email:</strong> info@durablecoatspainting.com</p>
-    <a href="mailto:info@durablecoatspainting.com" class="cta-button">Email Us Now</a>
+  <!-- WHY CHOOSE US -->
+  <section class="container">
+    <h2 class="section-title">Why Choose Us?</h2>
+    <ul class="list-disc list-inside mx-auto max-w-xl text-left space-y-3 text-lg">
+      <li>20+ years hands-on Florida experience</li>
+      <li>Industrial-grade pressure-washing equipment</li>
+      <li>Eco-friendly, safe cleaning & painting solutions</li>
+      <li>Transparent pricing—no surprises</li>
+      <li>Fast, friendly & reliable service</li>
+    </ul>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Durable Coats Painting | Destin, FL | All Rights Reserved</p>
-  </footer>
+  <!-- CONTACT -->
+  <section class="container mb-8">
+    <h2 class="section-title">Contact Us</h2>
+    <p class="text-xl">
+      Ready for a transformation?  
+      <strong>Call 850-860-5318</strong> or visit  
+      <a href="https://whatsgoodlocal.com/local-services" class="underline">WhatsGoodLocal.com</a>
+    </p>
+  </section>
 
+  <!-- FOOTER -->
+  <footer>&copy; 2025 Pressure Wash FL | All Rights Reserved</footer>
 </body>
 </html>
