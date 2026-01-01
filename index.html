@@ -1,197 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Top-rated house painting in Destin, FL. Over 25 years experience, proudly using Sherwin Williams, Behr, and other high-end products.">
-<title>Durable Coats Painting | Destin, FL</title>
-<style>
-:root {
-  --primary-color: #1e90ff;
-  --secondary-color: #f0f8ff;
-  --accent-color: #ff6347;
-  --text-color: #333;
-  --header-height: 80px;
-}
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: var(--text-color);
-  background: var(--secondary-color);
-  line-height: 1.6;
-}
-header {
-  background: var(--primary-color);
-  color: white;
-  height: var(--header-height);
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-.logo {
-  height: 60px;
-  margin-right: 15px;
-}
-header h1 { font-size: 1.8rem; flex-grow: 1; }
-nav a {
-  color: white;
-  margin-left: 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.hero {
-  background-image: url('https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-  padding: 0 20px;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-}
-.hero h2 { font-size: 2.5rem; margin-bottom: 10px; }
-.hero p { font-size: 1.2rem; }
-.cta-button {
-  background: var(--accent-color);
-  color: white;
-  padding: 12px 24px;
-  margin-top: 20px;
-  display: inline-block;
-  text-decoration: none;
-  font-size: 1rem;
-  border-radius: 5px;
-  transition: opacity 0.3s;
-}
-.cta-button:hover { opacity: 0.9; }
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 40px 20px;
-}
-.feature {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  flex: 1 1 300px;
-  margin: 15px;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s;
-}
-.feature:hover { transform: translateY(-5px); }
-.feature img, .feature video {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 15px;
-}
-footer {
-  background: var(--primary-color);
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
-@media (max-width: 768px) {
-  .features { flex-direction: column; align-items: center; }
-  .hero h2 { font-size: 2rem; }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Top-rated house painting in Destin, FL. Over 25 years experience, proudly using Sherwin Williams, Behr, and other high-end products.">
+  <title>Durable Coats Painting | Destin, FL</title>
+  <style>
+    :root {
+      --primary-color: #1e90ff;
+      --secondary-color: #f0f8ff;
+      --accent-color: #ff6347;
+      --text-color: #333;
+      --header-height: 80px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text-color);
+      background: var(--secondary-color);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary-color);
+      color: white;
+      height: var(--header-height);
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      height: 60px;
+      margin-right: 15px;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      flex-grow: 1;
+    }
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('images/Header.jpg') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .cta-button {
+      background: var(--accent-color);
+      color: white;
+      padding: 12px 24px;
+      margin-top: 20px;
+      display: inline-block;
+      text-decoration: none;
+      font-size: 1rem;
+      border-radius: 5px;
+      transition: opacity 0.3s;
+    }
+    .cta-button:hover { opacity: 0.9; }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 40px 20px;
+    }
+    .feature {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      flex: 1 1 300px;
+      margin: 15px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .feature:hover { transform: translateY(-5px); }
+    .feature img, .feature video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    footer {
+      background: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      .features { flex-direction: column; align-items: center; }
+      .hero h2 { font-size: 2rem; }
+    }
+  </style>
 </head>
 <body>
-<header>
-  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Durable Coats Painting Logo" class="logo">
-  <h1>Durable Coats Painting</h1>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#video">Video</a>
-    <a href="#beforeafter">Before & After</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-<section class="hero">
-  <div>
-    <h2>Over 25 Years of Experience</h2>
-    <p>Proudly using Sherwin Williams, Behr, and other high-end products</p>
-    <a href="#contact" class="cta-button">Get Your Free Quote</a>
-  </div>
-</section>
-<section id="video" style="padding: 40px 20px; text-align: center;">
-  <h2>Watch Our Work in Action</h2>
-  <video controls autoplay muted playsinline style="max-width: 100%; border-radius: 10px;">
-    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-  </video>
-</section>
-<section id="about" class="features">
-  <div class="feature">
-    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="High-End Paints">
-    <h3>High-Quality Paints</h3>
-    <p>We use premium paints like Sherwin Williams and Behr to ensure beautiful, long-lasting finishes.</p>
-  </div>
-  <div class="feature">
-    <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Expert Painters">
-    <h3>Experienced Team</h3>
-    <p>Our professional painters deliver precise, detailed workmanship on every project.</p>
-  </div>
-  <div class="feature">
-    <img src="https://images.unsplash.com/photo-1581092795360-4eb0b4863a7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Durable Finish">
-    <h3>Durable Results</h3>
-    <p>Our paint jobs stand up to the Florida sun, rain, and coastal conditions for years of beauty.</p>
-  </div>
-</section>
-<section id="services" class="features">
-  <div class="feature">
-    <img src="https://images.unsplash.com/photo-1581093577422-7c2d2a3d3d0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Interior Painting">
-    <h3>Interior Painting</h3>
-    <p>We refresh and beautify interior spaces with clean, professional paint finishes.</p>
-  </div>
-  <div class="feature">
-    <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Deck & Fence Painting">
-    <h3>Deck & Fence Painting</h3>
-    <p>Protect and beautify your outdoor surfaces with expert staining and painting services.</p>
-  </div>
-  <div class="feature">
-    <img src="https://images.unsplash.com/photo-1581092160565-3e3c7f0d1b3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Commercial Painting">
-    <h3>Commercial Services</h3>
-    <p>We handle commercial projects of all sizes with care, professionalism, and attention to detail.</p>
-  </div>
-</section>
-<section id="beforeafter" class="features">
-  <h2 style="width: 100%; text-align: center; margin-bottom: 20px;">Before & After Transformations</h2>
-  <div class="feature">
-    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Project Before & After 1">
-    <h3>Project 1</h3>
-    <p>See how we transformed this home with professional exterior painting.</p>
-  </div>
-  <div class="feature">
-    <img src="https://images.unsplash.com/photo-1598928692139-426614ackerman?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Project Before & After 2">
-    <h3>Project 2</h3>
-    <p>From worn to wow — our expert team revitalized this house with precision painting.</p>
-  </div>
-  <div class="feature">
-    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Project Before & After 3">
-    <h3>Project 3</h3>
-    <p>Professional results that enhance curb appeal and protect your property for years.</p>
-  </div>
-</section>
-<section id="contact" style="padding: 40px 20px; text-align: center;">
-  <h2>Contact Us</h2>
-  <p>Ready to transform your home? Let’s get started today!</p>
-  <p><strong>Phone:</strong> (850) 860-5318</p>
-  <p><strong>Email:</strong> info@durablecoatspainting.com</p>
-  <a href="mailto:info@durablecoatspainting.com" class="cta-button">Email Us Now</a>
-</section>
-<footer>
-  <p>&copy; 2025 Durable Coats Painting | Destin, FL | All Rights Reserved</p>
-</footer>
+
+  <header>
+    <img src="images/paintinglogo.png" alt="Durable Coats Painting Logo" class="logo">
+    <h1>Durable Coats Painting</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#video">Video</a>
+      <a href="#beforeafter">Before & After</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h2>Over 25 Years of Experience</h2>
+      <p>Proudly using Sherwin Williams, Behr, and other high-end products</p>
+      <a href="#contact" class="cta-button">Get Your Free Quote</a>
+    </div>
+  </section>
+
+  <section id="video" style="padding: 40px 20px; text-align: center;">
+    <h2>Watch Our Work in Action</h2>
+    <video src="PaintVideo.mp4" autoplay muted playsinline style="max-width: 100%; border-radius: 10px;">
+      Your browser does not support HTML5 video.
+    </video>
+  </section>
+
+  <section id="about" class="features">
+    <div class="feature">
+      <img src="images/image1.jpg" alt="High-End Products">
+      <h3>High-End Products</h3>
+      <p>We use only the best paints: Sherwin Williams, Behr, and other trusted brands for lasting results.</p>
+    </div>
+    <div class="feature">
+      <img src="images/image2.jpg" alt="Experienced Painters">
+      <h3>Our Expertise</h3>
+      <p>Based in Destin, FL, our team delivers quality workmanship and attention to detail on every job.</p>
+    </div>
+    <div class="feature">
+      <img src="images/image3.jpg" alt="House Exterior Painting">
+      <h3>Quality & Durability</h3>
+      <p>Enjoy vibrant, durable finishes that stand up to the Florida coast’s unique climate.</p>
+    </div>
+  </section>
+
+  <section id="services" class="features">
+    <div class="feature">
+      <img src="images/image4.jpg" alt="Interior Painting">
+      <h3>Interior Painting</h3>
+      <p>Transform your living spaces with fresh, flawless interior paint jobs.</p>
+    </div>
+    <div class="feature">
+      <img src="images/image5.jpg" alt="Deck Painting">
+      <h3>Deck & Fence Painting</h3>
+      <p>Restore and protect your outdoor wood surfaces with expert staining and painting.</p>
+    </div>
+    <div class="feature">
+      <img src="images/image6.jpg" alt="Commercial Painting">
+      <h3>Commercial Services</h3>
+      <p>From offices to storefronts, we handle projects of all sizes with professionalism and care.</p>
+    </div>
+  </section>
+
+  <section id="beforeafter" class="features">
+    <h2>Before & After Transformations</h2>
+    <div class="feature">
+      <img src="images/beforeafter1.jpg" alt="Before & After 1">
+      <h3>Project 1</h3>
+    </div>
+    <div class="feature">
+      <img src="images/beforeafter2.jpg" alt="Before & After 2">
+      <h3>Project 2</h3>
+    </div>
+    <div class="feature">
+      <img src="images/beforeafter3.jpg" alt="Before & After 3">
+      <h3>Project 3</h3>
+    </div>
+  </section>
+
+  <section id="contact" style="padding: 40px 20px; text-align: center;">
+    <h2>Contact Us</h2>
+    <p>Ready to transform your home? We’re just a click away.</p>
+    <p><strong>Phone:</strong> (850) 860-5318</p>
+    <p><strong>Email:</strong> info@durablecoatspainting.com</p>
+    <a href="mailto:info@durablecoatspainting.com" class="cta-button">Email Us Now</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Durable Coats Painting | Destin, FL | All Rights Reserved</p>
+  </footer>
+
 </body>
 </html>
